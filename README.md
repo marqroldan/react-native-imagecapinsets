@@ -1,10 +1,5 @@
 # React Native ImageCapInset
-Support Image capInsets for Android (only for RN >= 0.56)
-
-## Installation
-
-1. `yarn add react-native-imagecapinsets`
-2. `react-native link react-native-imagecapinsets`
+Support Image capInsets for Android
 
 ## Example
 
@@ -19,6 +14,6 @@ import BubbleImage from './images/bubble.png';
 
 ## Credits
 
-Continued development under RN 0.56
-[react-native-image-capinsets](https://github.com/madsleejensen/react-native-image-capinsets)
+Continued development under RN 0.60
+[react-native-image-capinsets](https://github.com/GeniusTony/react-native-imagecapinsets)
 package.

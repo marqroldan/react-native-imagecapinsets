@@ -23,10 +23,16 @@ public class RCTImageLoaderTask extends AsyncTask<String, Void, Bitmap> {
 
     @Override
     protected Bitmap doInBackground(String... params) {
-        if (mUri.startsWith("http")) {
-            return loadBitmapByExternalURL(mUri);
+        try {
+            if (mUri.startsWith("http")) {
+                return loadBitmapByExternalURL(mUri);
+            }
+            return loadBitmapByLocalResource(mUri);
+        } catch(Exception e) {
+            e.printStackTrace();
+            Bitmap bitmap = null;
+            return bitmap;
         }
-        return loadBitmapByLocalResource(mUri);
     }
 
     private Bitmap loadBitmapByLocalResource(String uri) {

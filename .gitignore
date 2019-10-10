@@ -27,6 +27,7 @@ android.iml
 .idea
 .gradle
 local.properties
+.project
 
 # node.js
 node_modules/*
