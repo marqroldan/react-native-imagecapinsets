@@ -41,7 +41,6 @@ public class RCTImageCapInsetView extends ImageView {
             @Override
             public void onImageLoaded(Bitmap bitmap) {
                 if(bitmap != null) {
-                    int ratio = Math.round(bitmap.getDensity() / 160);
                     int top = mCapInsets.top;
                     int left = mCapInsets.left;
                     int right = bitmap.getWidth() - mCapInsets.right;
