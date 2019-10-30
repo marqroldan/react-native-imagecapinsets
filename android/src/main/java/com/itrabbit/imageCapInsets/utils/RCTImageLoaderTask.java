@@ -17,22 +17,17 @@ public class RCTImageLoaderTask extends AsyncTask<String, Void, Bitmap> {
     public RCTImageLoaderTask(String uri, Context context, RCTImageLoaderListener listener) {
         mUri = uri;
         mContext = context;
-        mListener = listener;
         mResourceDrawableIdHelper = new RCTResourceDrawableIdHelper();
+        mListener = listener;
     }
 
     @Override
     protected Bitmap doInBackground(String... params) {
-        try {
-            if (mUri.startsWith("http")) {
-                return loadBitmapByExternalURL(mUri);
-            }
-            return loadBitmapByLocalResource(mUri);
-        } catch(Exception e) {
-            e.printStackTrace();
-            Bitmap bitmap = null;
-            return bitmap;
+        if (mUri.startsWith("http")) {
+            return loadBitmapByExternalURL(mUri);
         }
+        
+        return loadBitmapByLocalResource(mUri);
     }
 
     private Bitmap loadBitmapByLocalResource(String uri) {
