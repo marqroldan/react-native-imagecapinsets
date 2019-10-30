@@ -1,5 +1,6 @@
 package com.itrabbit.imageCapInsets;
 
+import android.util.Log;
 import android.graphics.*;
 import android.content.Context;
 import android.widget.ImageView;
