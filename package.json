@@ -1,17 +1,20 @@
 {
-  "name": "@geniustony/react-native-image-capinsets",
+  "name": "@marqroldan/react-native-image-capinsets",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/GeniusTony/react-native-imagecapinsets.git"
+    "url": "https://github.com/marqroldan/react-native-imagecapinsets.git"
   },
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "android support for Image `capInsets`. Continued development under RN 0.60 react-native-imagecapinsets package.",
   "author": {
-    "name": "GeniusTony"
+    "name": "marqroldan"
   },
   "license": "MIT",
-  "homepage": "https://github.com/GeniusTony/react-native-imagecapinsets",
+  "bugs": {
+    "url": "https://github.com/marqroldan/react-native-imagecapinsets/issues"
+  },
+  "homepage": "https://github.com/marqroldan/react-native-imagecapinsets",
   "keywords": [
     "capInsets",
     "9-patch",
@@ -20,5 +23,14 @@
     "images",
     "react-native",
     "native"
-  ]
+  ],
+  "dependencies": {
+    "prop-types": "15.5.10"
+  },
+  "devDependencies": {
+    "react": "16.9.0",
+    "react-native": "^0.60.0",
+    "react-test-renderer": "16.9.0",
+    "regenerator-runtime": "^0.11.0"
+  }
 }
