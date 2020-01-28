@@ -5,7 +5,7 @@
     "type": "git",
     "url": "https://github.com/marqroldan/react-native-imagecapinsets.git"
   },
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "android support for Image `capInsets`. Continued development under RN 0.60 react-native-imagecapinsets package.",
   "author": {
     "name": "marqroldan"
